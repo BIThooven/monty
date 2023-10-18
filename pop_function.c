@@ -12,7 +12,7 @@ void pop(stack_t **head, unsigned int lines)
 	thelist = *head;
 	if (*head == NULL || head == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't pop an empty stack", lines);
+		dprintf(STDERR_FILENO, "L%d: can't pop an empty stack\n", lines);
 		exit(EXIT_FAILURE);
 	}
 	(*head) = thelist->next;

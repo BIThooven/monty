@@ -15,7 +15,7 @@ void add(stack_t **head, unsigned int lines)
 
 	if (length < 2)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't add, stack too short", lines);
+		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n", lines);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}

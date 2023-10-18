@@ -30,7 +30,7 @@ void opcode_func(int lines, char *opt, stack_t **head)
 	}
 	if (cmd[i].opcode == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%d: unknown instruction %s", lines, opt);
+		dprintf(STDERR_FILENO, "L%d: unknown instruction %s\n", lines, opt);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}

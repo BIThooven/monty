@@ -14,7 +14,7 @@ void swap(stack_t **head, unsigned int lines)
 	thelist = *head;
 	if (length < 2)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't swap, stack too short", lines);
+		dprintf(STDERR_FILENO, "L%d: can't swap, stack too short\n", lines);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}
