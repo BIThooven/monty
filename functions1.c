@@ -15,7 +15,7 @@ void add_nodeint_end(stack_t **head, const int n)
 	if (new == NULL)
 	{
 		stack_free(new);
-		dprintf(STDERR_FILENO, "USAGE: monty file\n");
+		dprintf(STDERR_FILENO, "USAGE: monty file");
 		exit(EXIT_FAILURE);
 	}
 	new->n = n;
@@ -65,7 +65,7 @@ void add_nodeint(stack_t **h, const int n)
 	if (_new == NULL)
 	{
 		stack_free(_new);
-		dprintf(STDERR_FILENO, "USAGE: monty file\n");
+		dprintf(STDERR_FILENO, "USAGE: monty file");
 		exit(EXIT_FAILURE);
 	}
 	_new->n = n;

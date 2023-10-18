@@ -27,7 +27,7 @@ void push(stack_t **head, unsigned int linenum)
 	}
 	else
 	{
-		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", linenum);
+		dprintf(STDERR_FILENO, "L%u: usage: push integer", linenum);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}

@@ -9,7 +9,7 @@ void pint(stack_t **head, unsigned int lines)
 {
 	if (head == NULL || *head == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't pint, stack empty\n", lines);
+		dprintf(STDERR_FILENO, "L%d: can't pint, stack empty", lines);
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*head)->n);
