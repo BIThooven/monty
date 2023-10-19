@@ -56,6 +56,7 @@ typedef struct instruction_s
 } instruction_t;
 void sub(stack_t **head, unsigned int lines);
 void _div(stack_t **head, unsigned int lines);
+void modulo(stack_t **head, unsigned int lines);
 void split(char *buff, char *delim);
 void push(stack_t **head, unsigned int linenum);
 int _isdigit(char *s);

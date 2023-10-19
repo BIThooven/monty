@@ -18,6 +18,7 @@ void opcode_func(int lines, char *opt, stack_t **head)
 		{"nop", nop},
 		{"sub", sub},
 		{"div", _div},
+		{"mod", modulo},
 	};
 	int i;
 
