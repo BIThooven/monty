@@ -12,7 +12,7 @@ void sub(stack_t **head, unsigned int lines)
 	curr = NULL;
 	if (head == NULL)
 	{
-		fprintf(stderr, "L%u: can't sub, stack too short", lines);
+		fprintf(stderr, "L%u: can't sub, stack too short\n", lines);
 		exit(EXIT_FAILURE);
 	}
 	if ((head) == NULL || (*head)->next == NULL)

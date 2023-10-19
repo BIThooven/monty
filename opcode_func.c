@@ -17,6 +17,7 @@ void opcode_func(int lines, char *opt, stack_t **head)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
+		{"div", _div},
 	};
 	int i;
 
