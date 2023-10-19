@@ -54,6 +54,7 @@ typedef struct instruction_s
 		char *opcode;
 		void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+void sub(stack_t **head, unsigned int lines);
 void split(char *buff, char *delim);
 void push(stack_t **head, unsigned int linenum);
 int _isdigit(char *s);

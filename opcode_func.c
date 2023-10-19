@@ -16,6 +16,7 @@ void opcode_func(int lines, char *opt, stack_t **head)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
 	};
 	int i;
 
