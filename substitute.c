@@ -12,13 +12,13 @@ void sub(stack_t **head, unsigned int lines)
 	curr = NULL;
 	if (head == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: can't sub, stack too short", lines);
+		fprintf(stderr, "L%u: can't sub, stack too short", lines);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}
 	if ((head) == NULL || (*head)->next == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: can't sub, stack too short\n", lines);
+		fprintf(stderr, "L%u: can't sub, stack too short\n", lines);
 		stack_free(*head);
 		exit(EXIT_FAILURE);
 	}
